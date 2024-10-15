@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ArtSpace</string>
+<!--    project strings-->
+    <string name="gor1_author">Eric Lacombe</string>
+    <string name="gor1_artwork">Life is a Monster</string>
+
+    <string name="gor2_author">Michael Angelo Di Battista</string>
+    <string name="gor2_artwork">Mystery in the moonlight</string>
+
+    <string name="gore3_author">Peter Mohrbacher</string>
+    <string name="gore3_artwork">angelarium</string>
+
+    <string name="gore4_author">J.Manzanedo</string>
+    <string name="gore4_artwork">Demon of Pain</string>
+    
+    <string name="gore5_author">Unknown</string>
+    <string name="gore5_artwork">Demonic and Dark</string>
+    
+    <string name="gore6_author">Krzysztof Domaradzki</string>
+    <string name="gore6_artwork">Draw</string>
+
+    <string name="gore7_author">Aaron Horkey</string>
+    <string name="gore7_artwork">VVitch</string>
+
+    <string name="gore8_author">Miles Johnson</string>
+    <string name="gor8_artwork">Surreal Drawings</string>
+
+
+    <string name="gore9_author">John Mortensen</string>
+    <string name="gor9_artwork">Drawings</string>
+
+    <string name="gore10_author">Suehiro Maruo</string>
+    <string name="gor10_artwork">Ero Guro Manga</string>
+
+
+</resources>
