@@ -90,8 +90,11 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun ArtSpace(modifier: Modifier){
     val context = LocalContext.current
+    val coloB = colorResource(id = R.color.colorBCard)
+    val colorC = colorResource(id = R.color.colorCard)
+
     var cardColor by remember {
-        mutableStateOf(Color.LightGray)
+        mutableStateOf(coloB)
     }
     var next by remember {
         mutableIntStateOf(1)
@@ -109,8 +112,8 @@ fun ArtSpace(modifier: Modifier){
             onClick = {
                 Toast.makeText(context,"Art Gallery", Toast.LENGTH_SHORT).show()
                 cardColor = when(cardColor){
-                    Color.LightGray -> Color.Magenta
-                    else -> Color.LightGray
+                    coloB -> colorC
+                    else -> coloB
                 }
             },
             elevation = CardDefaults.cardElevation(
@@ -124,6 +127,7 @@ fun ArtSpace(modifier: Modifier){
                     width = 240.dp, height = 95.dp
                 )
                 .align(Alignment.CenterHorizontally)
+                .padding(top = 32.dp)
         ){
             TextArt(next = next)
         }
@@ -227,7 +231,7 @@ fun TextArt(next: Int){
     val gradientColors = listOf(Color.Blue,Color.Black, Color.Magenta)
     Text(
         text = stringResource(stringResources),
-        fontSize = 28.sp,
+        fontSize = 20.sp,
         fontWeight = FontWeight.Bold,
         textAlign = TextAlign.Center,
         style = TextStyle(
@@ -239,12 +243,13 @@ fun TextArt(next: Int){
     )
     Text(
         text = stringResource(stringResourcesTitle),
-        fontSize = 18.sp,
+        fontSize = 16.sp,
         fontStyle = FontStyle.Italic,
         fontWeight = FontWeight.Bold,
         modifier = Modifier.padding(start = 64.dp)
     )
 }
+
 
 @Preview(
     showBackground = true,
